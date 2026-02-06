@@ -3,10 +3,10 @@
 # Installation et Lancement
 
 ## 1. Clonage des dépôts
-Clonez les deux dépôts brc-web et brc-gateway :
+Clonez les deux dépôts brc-gateway et brc-web :
 ```bash
-git clone [[https://github.com/votre-organisation/brc-gateway.git](https://github.com/votre-organisation/brc-gateway.git)](https://github.com/Brain-Rot-RPG/brc-web.git)
-git clone [[https://github.com/votre-organisation/brc-web.git](https://github.com/votre-organisation/brc-web.git)](https://github.com/Brain-Rot-RPG/brc-gateway.git)
+git clone  https://github.com/Brain-Rot-RPG/brc-gateway.git
+git clone https://github.com/Brain-Rot-RPG/brc-web.git
 
 ```
 
