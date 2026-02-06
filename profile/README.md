@@ -5,7 +5,7 @@
 ## 1. Clonage des dépôts
 Clonez les deux dépôts brc-gateway et brc-web :
 ```bash
-git clone  https://github.com/Brain-Rot-RPG/brc-gateway.git
+git clone https://github.com/Brain-Rot-RPG/brc-gateway.git
 git clone https://github.com/Brain-Rot-RPG/brc-web.git
 
 ```
