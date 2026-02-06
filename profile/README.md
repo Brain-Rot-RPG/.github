@@ -1,9 +1,6 @@
 # Brain Rot Chronicles : The Aura Farming Expedition
 
 # Installation et Lancement
-
-Suivez ces étapes pour configurer et lancer **Brain Rot Chronicles** sur votre machine locale.
-
 ---
 
 ## 1. Clonage des dépôts
