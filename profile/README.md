@@ -1,5 +1,85 @@
 # Brain Rot Chronicles : The Aura Farming Expedition
 
+# Installation et Lancement
+
+Suivez ces étapes pour configurer et lancer **Brain Rot Chronicles** sur votre machine locale.
+
+---
+
+## 1. Clonage des dépôts
+Clonez les deux dépôts principaux dans un même dossier parent :
+```bash
+git clone [https://github.com/votre-organisation/brc-gateway.git](https://github.com/votre-organisation/brc-gateway.git)
+git clone [https://github.com/votre-organisation/brc-web.git](https://github.com/votre-organisation/brc-web.git)
+
+```
+
+## 2. Configuration de l'environnement (Gateway)
+
+Accédez au dossier de la gateway et préparez les variables d'environnement :
+
+* Allez dans le dossier `brc-gateway`.
+* Créez un fichier `.env` à partir du modèle fourni :
+```bash
+cp .env.example .env
+
+```
+
+
+
+## 3. Authentification GitHub Container Registry (GHCR)
+
+Pour permettre à Docker de récupérer les images nécessaires, vous devez vous authentifier :
+
+1. **Générer un Token :**
+* Allez sur GitHub : **Settings** > **Developer Settings** > **Personal access token** > **Tokens (classic)**.
+* Cliquez sur **Generate new token (classic)**.
+* Sélectionnez les scopes : `repo` et `read:packages`.
+* **Copiez le jeton** généré.
+
+
+2. **Connexion via le terminal :**
+Exécutez la commande suivante en remplaçant les placeholders :
+```bash
+echo "VOTRE_TOKEN_ICI" | docker login ghcr.io -u VOTRE_USERNAME --password-stdin
+
+```
+
+
+
+## 4. Lancement de l'infrastructure
+
+Depuis le dossier `brc-gateway`, lancez les services Docker (Bases de données, etc.) :
+
+```bash
+docker-compose up -d --build
+
+```
+
+## 5. Démarrage des services
+
+Une fois l'infrastructure prête, lancez les applications en mode développement.
+
+### Backend (brc-gateway)
+
+```bash
+cd brc-gateway
+npm install
+npm run dev
+
+```
+
+### Frontend (brc-web)
+
+Ouvrez un nouveau terminal :
+
+```bash
+cd brc-web
+npm install
+npm run dev
+
+```
+
 ## 1. Concept Global
 
 Jeu de rôle (Rogue-like) sur navigateur où le joueur incarne un "Brain Rot" qui doit traverser un donjon pour affronter le boss final : “La Grande Suprême Combinacion”.
