@@ -18,14 +18,14 @@ Jeu de rôle (Rogue-like) sur navigateur où le joueur incarne un "Brain Rot" qu
 ## 3. Système de Jeu (Gameplay)
 
 - Héros : Le joueur peut créer ou sélectionner un héros parmi une liste complète disponible à la connexion.
-  - Statistiques : PV (Points de Vie), Niveau, Stat d'attaque, Gold (Or).
-  - Inventaire : Objets de soin, bonus d'attaque, bonus de PV, ou objets modifiant les chances de rencontre de combat.
+  - Statistiques : PV (Points de Vie), Niveau, Stat d'attaque.
+  - Inventaire : Objets de soin, bonus d'attaque ou bonus de PV.
 - Donjon et Déplacement :
   - Génération : Les donjons sont générés aléatoirement sous forme d'un arbre.
   - Structure des nœuds : Chaque nœud de l'arbre représente une étape où le joueur effectue l'action de se déplacer. Un nœud peut contenir :
     - Un combat.
     - Un objet (item).
-    - Un événement aléatoire lié au donjon.
+    - Une case vide. 
   - Progression : Le joueur choisit son chemin à travers l'arbre (chemins plus ou moins longs offrant plus ou moins de bonus) jusqu'à atteindre le nœud final du Boss.
 - Combat :
   - Se déclenche sur les nœuds de l'arbre ou selon une chance de rencontre.
