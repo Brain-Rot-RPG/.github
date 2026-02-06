@@ -23,6 +23,8 @@ cp .env.example .env
 
 ## 3. Authentification GitHub Container Registry (GHCR)
 
+> **Note :** Si vous avez déjà configuré votre accès au GHCR sur votre machine, vous pouvez ignorer cette étape.
+
 Pour permettre à Docker de récupérer les images nécessaires, vous devez vous authentifier :
 
 1. **Générer un Token :**
