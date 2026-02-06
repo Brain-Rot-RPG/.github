@@ -1,13 +1,12 @@
 # Brain Rot Chronicles : The Aura Farming Expedition
 
 # Installation et Lancement
----
 
 ## 1. Clonage des dépôts
-Clonez les deux dépôts principaux dans un même dossier parent :
+Clonez les deux dépôts brc-web et brc-gateway :
 ```bash
-git clone [https://github.com/votre-organisation/brc-gateway.git](https://github.com/votre-organisation/brc-gateway.git)
-git clone [https://github.com/votre-organisation/brc-web.git](https://github.com/votre-organisation/brc-web.git)
+git clone [[https://github.com/votre-organisation/brc-gateway.git](https://github.com/votre-organisation/brc-gateway.git)](https://github.com/Brain-Rot-RPG/brc-web.git)
+git clone [[https://github.com/votre-organisation/brc-web.git](https://github.com/votre-organisation/brc-web.git)](https://github.com/Brain-Rot-RPG/brc-gateway.git)
 
 ```
 
@@ -21,8 +20,6 @@ Accédez au dossier de la gateway et préparez les variables d'environnement :
 cp .env.example .env
 
 ```
-
-
 
 ## 3. Authentification GitHub Container Registry (GHCR)
 
@@ -41,8 +38,6 @@ Exécutez la commande suivante en remplaçant les placeholders :
 echo "VOTRE_TOKEN_ICI" | docker login ghcr.io -u VOTRE_USERNAME --password-stdin
 
 ```
-
-
 
 ## 4. Lancement de l'infrastructure
 
